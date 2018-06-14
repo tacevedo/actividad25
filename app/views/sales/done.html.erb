@@ -1,0 +1,10 @@
+<h1>Done</h1>
+<%= @sales.each do |p| %>
+  <h1> <%= p.cod %> </h1>
+  <p> <%= p.detail %> </p>
+  <p> <%= p.category %> </p>
+  <p> <%= p.value %> </p>
+  <p> <%= p.discount %> </p>
+  <p> <%= p.tax %> </p>
+  <p> <%= p.total %> </p>
+<% end %>

@@ -1,0 +1,33 @@
+<%= form_with model: @sale, local: true do |f| %>
+  <div>
+    <%= f.label :cod, "Codigo" %>
+    <%= f.number_field :cod %>
+  </div>
+  <div>
+    <%= f.label :detail, "Detalle" %>
+    <%= f.text_area :detail %>
+  </div>
+  <div>
+    <%= f.label :category, "Categoria" %>
+    <%= f.text_field :category %>
+  </div>
+  <div>
+    <%= f.label :value, "value" %>
+    <%= f.number_field :value %>
+  </div>
+  <div>
+    <%= f.label :discount, "discount" %>
+    <%= f.number_field :discount %>
+  </div>
+  <div>
+    <%= f.label :tax, "tax" %>
+    <%= f.number_field :tax %>
+  </div>
+  <div>
+    <%= f.label :total, "total" %>
+    <%= f.number_field :total %>
+  </div>
+  <div>
+    <%= f.submit "Send" %>
+  </div>
+<% end %>

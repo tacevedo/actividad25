@@ -2,10 +2,10 @@
 <%= form_with model: @sale, local: true do |f| %>
   <!-- <input type="hidden" value="<%=form_authenticity_token%>"name="authenticity_token"> -->
 
-  <!-- <div class="form-control">
+  <div class="form-control">
     <%= f.label :cod, "Codigo" %>
     <%= f.number_field :cod %>
-  </div> -->
+  </div>
   <div class="form-control">
     <%= f.label :detail, "Detalle" %>
     <%= f.text_area :detail %>

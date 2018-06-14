@@ -4,8 +4,8 @@ class SalesController < ApplicationController
   end
   def create
 
-    @sale = Sale.new(params[:sale])
-    @sale.save
+    @sale = Sale.new(sale_params)
+    @sale.save!
     redirect_to sales_path
   end
   def done
@@ -14,7 +14,7 @@ class SalesController < ApplicationController
 
   private
 
-  def post_params
+  def sale_params
     params.require(:sale).permit(:cod, :detail, :category, :value, :discount, :tax, :total)
   end
 end

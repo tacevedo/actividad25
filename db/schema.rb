@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2018_06_13_233319) do
   create_table "sales", force: :cascade do |t|
     t.integer "cod"
     t.string "detail"
-    t.integer "category"
+    t.string "category"
     t.integer "value"
     t.integer "discount"
     t.integer "tax"

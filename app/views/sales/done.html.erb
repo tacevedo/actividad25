@@ -1,10 +1,11 @@
 <h1>Done</h1>
+<h3>El registro fue almacenado con exito!</h3>
 <%= @sales.each do |p| %>
-  <h1> <%= p.cod %> </h1>
-  <p> <%= p.detail %> </p>
-  <p> <%= p.category %> </p>
-  <p> <%= p.value %> </p>
-  <p> <%= p.discount %> </p>
-  <p> <%= p.tax %> </p>
-  <p> <%= p.total %> </p>
+  <h1> codigo: <%= p.cod %> </h1>
+  <p> detalle: <%= p.detail %> </p>
+  <p> Categoria: <%= p.category %> </p>
+  <p> valor: <%= p.value %> </p>
+  <p> descuento: <%= p.discount %> </p>
+  <p> impuesto: <%= p.tax %> </p>
+  <h4> Total: <%= p.total %> </h4>
 <% end %>

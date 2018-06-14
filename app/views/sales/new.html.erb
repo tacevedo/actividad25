@@ -1,35 +1,40 @@
+<h1>Nuevo item</h1>
 <%= form_with model: @sale, local: true do |f| %>
   <!-- <input type="hidden" value="<%=form_authenticity_token%>"name="authenticity_token"> -->
 
-  <div>
+  <!-- <div class="form-control">
     <%= f.label :cod, "Codigo" %>
     <%= f.number_field :cod %>
-  </div>
-  <div>
+  </div> -->
+  <div class="form-control">
     <%= f.label :detail, "Detalle" %>
     <%= f.text_area :detail %>
   </div>
-  <div>
+  <div class="form-control">
     <%= f.label :category, "Categoria" %>
     <%= f.text_field :category %>
   </div>
-  <div>
+  <div class="form-control">
     <%= f.label :value, "value" %>
     <%= f.number_field :value %>
   </div>
-  <div>
+  <div class="form-control">
     <%= f.label :discount, "discount" %>
     <%= f.number_field :discount %>
   </div>
-  <div>
+  <div class="form-control">
+    <%= check_box_tag(:exentoiva) %>
+    <%= label_tag(:exentoiva, "Exento de IVA") %>
+  </div>
+  <!-- <div class="form-control">
     <%= f.label :tax, "tax" %>
     <%= f.number_field :tax %>
-  </div>
-  <div>
+  </div> -->
+  <!-- <div class="form-control">
     <%= f.label :total, "total" %>
     <%= f.number_field :total %>
-  </div>
-  <div>
+  </div> -->
+  <div class="form-control">
     <%= f.submit "Send" %>
   </div>
 <% end %>
